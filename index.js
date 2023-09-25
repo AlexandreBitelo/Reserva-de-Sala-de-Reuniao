@@ -1,8 +1,8 @@
 /*
-* Trabalho final do curso de desvolvimento com JavaScript do Senac
+* Trabalho final do curso de desvolvimento com JavaScript do Senac;
 *
-* Alexandre Bitelo
-*
+* Alexandre Bitelo ;
+* Samuel Melo;
 */
 
 const reservas = [];
@@ -10,7 +10,7 @@ const reservas = [];
 function criarReserva(novaReserva, num) {
 
     //Identificador do objeto
-    reservaNumero = "reserva " + num
+    reservaNumero = "reserva " + num;
 
 
     //Adicionando objeto
@@ -25,7 +25,7 @@ function criarReserva(novaReserva, num) {
 
 
     //Retorna Vetor com Novo Objeto
-    return novaReserva
+    return novaReserva;
 
 
 }
@@ -114,7 +114,7 @@ function visualizarReserva (vetorDeReserva) {
 
 function fimDaTabela (propriedade, tamanhoDaPergunta) {
     tamanhoDaLinha = 60;
-    let espacoEmBranco = ""
+    let espacoEmBranco = "";
 
    
     tamanhoDaLinha = (tamanhoDaLinha - tamanhoDaPergunta) - propriedade.length
@@ -128,14 +128,14 @@ function fimDaTabela (propriedade, tamanhoDaPergunta) {
 
     }
     //Retorna o Fechamento da Tabela
-    return espacoEmBranco + "|"
+    return espacoEmBranco + "|";
 }
 
 
 function editarReserva (vetor) {
 
     let bloco = Number( prompt ("Qual Reserva Você Quer Editar? [1.. " + vetor.length + "]"));
-    bloco = bloco - 1
+    bloco = bloco - 1;
     
 
     console.log (`1º Item | Nome do Solicitante: ${vetor[bloco].nomeDoSolicitante}`);
@@ -146,7 +146,7 @@ function editarReserva (vetor) {
     console.log ("6º Voltar ao Menu");
 
     
-    let item = Number(prompt ("Qual Item Você quer Editar? "))
+    let item = Number(prompt ("Qual Item Você quer Editar? "));
     switch (item) {
         case 1:
             vetor[bloco].nomeDoSolicitante = prompt ("Qual novo valor? ")
@@ -174,22 +174,22 @@ function editarReserva (vetor) {
     }
 
     //Retorna Vetor com Item Editado
-    return vetor[bloco]
+    return vetor[bloco];
 
 }
 
 
 
 function deletarReserva (vetor) {
-    bloco = Number (prompt ("Qual Reserva Você Quer Deletar? [1.. " + vetor.length + "]"))
-    bloco = bloco - 1
+    bloco = Number (prompt ("Qual Reserva Você Quer Deletar? [1.. " + vetor.length + "]"));
+    bloco = bloco - 1;
 
     //Método para deletar elementos do array
-    vetor.splice (bloco, 1)
+    vetor.splice (bloco, 1);
 
 
     //Retorna Vetor com o Item Deletado
-    return vetor
+    return vetor;
 }
 
 
@@ -252,4 +252,4 @@ function menu() {
 }
 
 //Chamada da função menu 
-console.log(menu())
+console.log(menu());
