@@ -1,7 +1,7 @@
 /*
 * Trabalho final do curso de desvolvimento com JavaScript do Senac;
 *
-* Alexandre Bitelo ;
+* Alexandre Bitelo;
 * Samuel Melo;
 */
 
