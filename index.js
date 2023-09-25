@@ -234,7 +234,7 @@ function menu() {
 
             case 5:
                 //Sai do Programa
-                console.log ("Saindo...");
+                return ("Saindo...");
                 break;
         }
 
