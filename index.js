@@ -76,8 +76,19 @@ function visualizarReserva (vetorDeReserva) {
 
         }
 
+        //Se for apenas uma reserva
+        if (vetorDeReserva.length === 1) {
+            console.log (`${inicio}\n${espaco
+            }| Nome do Solicitante: ${vetorDeReserva[cont].nomeDoSolicitante} ${fimDaTabela(reservas[cont].nomeDoSolicitante, 26)}\n${espaco
+            }| Data: ${vetorDeReserva[cont].data} ${fimDaTabela(reservas[cont].data, 11)}\n${espaco
+            }| Horário: ${vetorDeReserva[cont].horario} ${fimDaTabela(reservas[cont].horario, 14)}\n${espaco
+            }| Sala Desejada: ${vetorDeReserva[cont].salaDesejada} ${fimDaTabela(reservas[cont].salaDesejada, 20)}\n${espaco
+            }| Finalidade da Reunião: ${vetorDeReserva[cont].finalidade} ${fimDaTabela(reservas[cont].finalidade, 28)}\n${espaco
+            }${fim}`)
 
-        if (cont === (vetorDeReserva.length - 1 )) {
+
+        
+        }else if (cont === (vetorDeReserva.length - 1 )) {
             //Com Fechamento da Tabela
             console.log (`${espaco
             }| Nome do Solicitante: ${vetorDeReserva[cont].nomeDoSolicitante} ${fimDaTabela(reservas[cont].nomeDoSolicitante, 26)}\n${espaco
